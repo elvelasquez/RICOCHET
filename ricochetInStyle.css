@@ -1,0 +1,107 @@
+body {
+background-color: darkgray;
+}
+
+.innerContainer {
+  min-width: 875px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#box {
+margin-top:0px;
+margin-left:0px;
+position: absolute; 
+z-index: 1; 
+background: green;
+width: 900px;
+height: 900px;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+margin: 50px;
+display: block;
+}
+
+.text {
+font-family: "Impact", Charcoal, sans-serif;
+margin-top:220px;
+margin-left:14px;
+position: absolute; 
+z-index: 2; 
+font-size: 210%;
+}
+
+#gameInfoP1{
+margin-top:120px;
+margin-left:30px;
+position: absolute; 
+z-index: 2; 
+font-size: 210%;
+}
+
+#gameInfoP2{
+margin-top:340px;
+margin-left:30px;
+position: absolute; 
+z-index: 2; 
+font-size: 210%;
+}
+
+#gameInfoP4{
+margin-top:237px;
+margin-left:30px;
+position: absolute; 
+z-index: 2; 
+font-size: 210%;
+}
+
+#gameInfoP3{
+margin-top:263px;
+margin-left:30px;
+position: absolute; 
+z-index: 2; 
+font-size: 210%;
+}
+
+#visTurnsLeft{
+font-family: "Impact", Charcoal, sans-serif;
+text-align:center;
+border: 2px solid;
+border-radius: 25px;
+}
+
+h1 {
+	vertical-align:middle;
+	text-align:center;
+    color: navy;
+	font-family: "Impact", Charcoal, sans-serif;
+	font-size: 300%;
+}
+
+.instructions {
+	font-size: 120%;
+	width:650px;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	list-style-position:inside;
+	border: 2px solid;
+    border-radius: 25px;
+}
+
+
+.leftCanvas{
+
+}
+
+.rightCanvas{
+
+}
+
+.gameGrid {
+	flex-basis: 1;
+	flex-shrink: 0;
+}
