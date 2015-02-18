@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<title>Ricochet!</title>
+<link rel="stylesheet" type="text/css" href="ricochetInStyle.css">
+<script type="text/javascript" src="ricochetWithScripts.js"> </script>
+</head>
+
+<body onload="onLoad()">
+
+
+	<div id="top"><h1>RICOCHET!</h1>
+
+	
+	<div class = "innerContainer">
+	
+		<div class="text" id="gameInfoP1">
+		Status </br>
+		<div id="status"> P1 choose </div>
+		</div>
+
+		<div class="text" id="gameInfoP4"> 
+		P2 AI:
+		</div>
+		
+		<div class="text" id="gameInfoP3">
+		<select id="AImenu">
+		<option value="1" selected>Human</option>
+		<option value="2">Aggressive Dumb</option>
+		<option value="3">----</option>
+		</select> </div>		
+		
+		<div class="text" id="gameInfoP2">
+		Winning: </br>
+		<div id="winning"> No one </div>
+		</div>		
+
+		
+		<canvas id="leftCanvas"></canvas>	
+		<canvas id="gameGrid"></canvas>
+		
+		<div class = "text">
+        <b>Turns to go:</b><br/>     
+		<div id="visTurnsLeft">
+		12
+		</div>
+		</div>
+		
+		<canvas id="rightCanvas"></canvas>
+
+
+	</div>	<br/>
+	<div class="instructions"><p>
+	These are the instructions for Ricochet
+	</p>
+	<ol>
+	<li>All circles can only move vertically or horizontally</li>
+	<li>All crowns can only move diagonally</li>
+	<li>Any piece can capture another, multiple captures in 1 move are possible</li>
+	<li>After capturing, the attacking piece must be moved backwards along its attacking path</li>
+	<li>You can ricochet backwards into an enemy and ricochet again into another</li>
+	<li>The one with the most pieces in 10 whole turns wins</li>
+	</ol></b>
+	</div>
+	
+</body>
+</html>
